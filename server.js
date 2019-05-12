@@ -40,7 +40,7 @@ app.get('/', function(req,res){
 
 app.post('/post', function(req, res) {
   console.log(req.body.email)
-  input = [req.body.comment]
+  input = [req.body.email]
 
   client.query(text, input, (err, res) => {
     if (err) throw err;
