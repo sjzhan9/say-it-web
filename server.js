@@ -2,7 +2,7 @@ var express = require('express');
 
 var app = express()
 
-var text = "INSERT INTO users (email) VALUES ($1);"
+var text = "INSERT INTO users(email) VALUES($1);"
 
 app.use(express.static('public'))
 
