@@ -8,8 +8,6 @@ app.use(express.static('public'))
 
 var mustacheExpress = require('mustache-express');
 
-database
-
 var {
   Client
 } = require('pg');
