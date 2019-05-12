@@ -53,12 +53,12 @@
           <div class="column-2">
                 <div style="padding-top: 60%; padding-left: 10%;padding-right: 10%">
                   <div style="padding-bottom: 25px">
-                      <H1 style="font-size: 60px; color: #FFFFFF; letter-spacing: 0;">Say it!</H1>
+                      <H1 style="font-size: 64px; color: #FFFFFF;">Say it!</H1>
                   </div>
                 
-                  <H3 style="font-size: 18px; font-weight: 500; color: #FFFFFF;">
+                  <p style="font-size: 18px; color: #FFFFFF;">
                   Say it, expressiely. Use Say it to animate what you say, instantly save the video or share it over Instagram Storys.
-                  </H3>
+                  </p>
                   <div style="padding-top: 20px">
                       <IMG SRC="assets/app-store.png" style="width:160px">
                   </div>
@@ -76,58 +76,63 @@
 
   <!-- App Demo -->
   <div class="container">
-    <div style="text-align: center;">
+    <div style="text-align: center; padding-top: 100px; ">
       <div style="padding-bottom: 25px">
-          <H2 style="font-size: 40px; color: rgb(0, 0, 0); letter-spacing: 0;">Perfect story companion</H2>
+          <H2 style="font-size: 40px">Perfect story companion</H2>
       </div>
     
-    <H3 style="font-size: 18px; font-weight: 500; color: rgba(0, 0, 0, 0.5);">
+    <p style="font-size: 18px;">
       Ever shout in your story but no one ever have their sound on?<br>
       Emotions get lost with sound, but now, you can visualize your message with Say it!
-    </H3>
+    </p>
   </div>
-    <div class="row">
+    <div class="row" style="padding-top: 60px;padding-bottom: 60px">
       <div class="column-2" style="text-align: center;">
-        <IMG SRC="assets/demo-1.png" style="width:80%">
+        <IMG SRC="assets/demo-1.png" style="width:75%">
       </div>
       <div class="column-2" style="text-align: center;">
-        <IMG SRC="assets/demo-1.png" style="width:80%">
+        <IMG SRC="assets/demo-1.png" style="width:75%">
       </div>
     </div>
   </div>
 
   <!-- Expressive fonts, vibrant colors -->
-  <div style="background-image:url('assets/photo-bg.jpg');height: 65vh; background-position: center;">
-      <div style="text-align: center; padding-top: 50px">
+  <div style="background-image:url('assets/photo-bg.jpg');height: 80vh; min-height: 720px;max-height: 860px; background-position: center;">
+      <div style="text-align: center; padding-top: 100px">
           <div style="padding-bottom: 25px">
-              <H2 style="font-size: 40px; color: rgb(0, 0, 0); letter-spacing: 0;">Expressive fonts, vibrant colors</H2>
+              <H2 style="font-size: 40px">Expressive fonts, vibrant colors</H2>
           </div>
         
-        <H3 style="font-size: 18px; font-weight: 500; color: rgba(0, 0, 0, 0.5);padding-bottom: 50px">
+        <p style="font-size: 18px;">
           Four amazing presets to choose from,dozens of style combinations to explore.
-        </H3>
+        </p>
 
         <div style="text-align: center;">
-          <IMG SRC="assets/font-demo.png" style="height:60vh; text-align: center;">
+          <IMG SRC="assets/font-demo.png" style="height:65vh; min-height: 560px;max-height: 700px; text-align: center;">
         </div>
       </div>  
   </div>
 
   <!-- Keep in touch -->
   <div>
-    <div style="text-align: center; padding-top: 100px">
-        <div style="padding-bottom: 25px">
+    <div style="text-align: center; padding: 80px; padding-top: 120px;">
+        <div style="padding-bottom: 10px">
             <H2 style="font-size: 40px; color: rgb(0, 0, 0); letter-spacing: 0;">Keep in touch</H2>
         </div>
       
-      <H3 style="font-size: 18px; font-weight: 500; color: rgba(0, 0, 0, 0.5);padding-bottom: 50px">
-        Sign up with your email and be the first one to know when Say it! launches
-      </H3>
+      <p style="font-size: 18px; padding-bottom: 20px">
+        Sign up with your email and be the first one to know when <br>
+        Say it! launches
+      </p>
 
       <div style="text-align: center;">
-        <form>
-        </form>
+        <form method="POST" action="/post">
+          <input type = "email" name = "email" required="required" placeholder="Email Address"style="border-radius: 5px; border:1px solid rgb(210, 210, 210);
+           font-weight:400; padding: 12px 16px; width: 290px">
 
+          <input type = "submit" value="Submit" style="border-radius: 5px; background-color: black; color: white; border:none; 
+          font-weight:600; padding: 13px 25px; ">
+        </form>
       </div>
     </div>  
 </div>
@@ -135,35 +140,15 @@
   <!-- Footer -->
   <footer>
     <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
-          <ul class="list-inline text-center">
-            <li class="list-inline-item">
-              <a href="#">
-                <span class="fa-stack fa-lg">
-                  <i class="fas fa-circle fa-stack-2x"></i>
-                  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#">
-                <span class="fa-stack fa-lg">
-                  <i class="fas fa-circle fa-stack-2x"></i>
-                  <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#">
-                <span class="fa-stack fa-lg">
-                  <i class="fas fa-circle fa-stack-2x"></i>
-                  <i class="fab fa-github fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-          </ul>
-          <p class="copyright text-muted">Copyright &copy; Your Website 2019</p>
+      <div class="row" style="padding: 20px">
+        <div class="column-2" style="width: 70%; padding: 20px; padding-right: 60px; padding-bottom: 0px">
+          <H3 style="font-size: 18px">Design and developed by S. J. Zhang at ITP @NYU</H3>
+          <p style="font-size: 18px">Development support from Nien Lam and Sebastien Buys of LineBreak Studio. Project is open-sourced on GitHub.</p>
+        </div>
+        <div class="column-2" style="width: 30%; padding: 20px">
+          <H3 style="font-size: 18px">Support me</H3>
+          <IMG SRC="assets/sponsor.png" style="width: 180px; padding-top: 20px">
+
         </div>
       </div>
     </div>
