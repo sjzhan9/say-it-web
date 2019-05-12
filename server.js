@@ -10,16 +10,16 @@ var mustacheExpress = require('mustache-express');
 
 //database
 
-var {
-  Client
-} = require('pg');
-var connectionString = process.env.DATABASE_URL;
+// var {
+//   Client
+// } = require('pg');
+// var connectionString = process.env.DATABASE_URL;
 
-var client = new Client({
-    connectionString: connectionString,
-    ssl: true,
-});
-var bodyParser = require('body-parser');
+// var client = new Client({
+//     connectionString: connectionString,
+//     ssl: true,
+// });
+// var bodyParser = require('body-parser');
 
 // Register '.mustache' extension with The Mustache Express
 app.engine('html', mustacheExpress());
@@ -34,15 +34,15 @@ app.get('/', function(req,res){
     // res.send("hello")
 })
 
-app.post('/post', function(req, res) {
-  console.log(req.body.email)
-  input = [req.body.comment]
+// app.post('/post', function(req, res) {
+//   console.log(req.body.email)
+//   input = [req.body.comment]
 
-  client.query(text, input, (err, res) => {
-    if (err) throw err;
-  })
-  res.redirect('/')
-})
+//   client.query(text, input, (err, res) => {
+//     if (err) throw err;
+//   })
+//   res.redirect('/')
+// })
 
 app.listen(8000, function(){
   console.log("connected")
