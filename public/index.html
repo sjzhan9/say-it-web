@@ -15,9 +15,14 @@
 
   <!-- Custom fonts for this template -->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Muli|Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Roboto|Work+Sans" rel="stylesheet">
   <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+  <script src="animation.js"></script>
+
+
 
   <!-- Custom styles for this template -->
   <link href="styles.css" rel="stylesheet">
@@ -54,7 +59,7 @@
           <div class="column-2">
                 <div style="padding-top: 60%; padding-left: 10%;padding-right: 10%">
                   <div style="padding-bottom: 2px">
-                      <H1 style="font-size: 64px; color: #FFFFFF;">Say it!</H1>
+                      <H1 style="font-size: 84px; color: #FFFFFF;">Say it!</H1>
                   </div>
                 
                   <p style="font-size: 18px; color: #FFFFFF;">
@@ -66,7 +71,7 @@
                 </div>
           </div>
           <div class="column-2" style="padding-top: 80px;padding-left: 0px; padding-right: 0px; padding-bottom: 0px; text-align: center;">
-              <IMG SRC="assets/header-demo.png" style="height:calc(75vh - 80px);min-height: 640px;max-height: 820px">
+              <IMG id="header-image" SRC="assets/header-demo.png" style="height:calc(75vh - 80px);min-height: 640px;max-height: 820px">
           </div>
         </div>
       </div>
@@ -77,55 +82,55 @@
 
   <!-- App Demo -->
   <div class="container">
-    <div style="text-align: center; padding-top: 80px; ">
-      <div style="padding-bottom: 0px">
-          <H2 style="font-size: 40px">Perfect story companion</H2>
-      </div>
-    
-    <p style="font-size: 18px;">
-      Ever shout in your story but no one ever have their sound on?<br>
-      Emotions get lost with sound, but now, you can visualize your message with Say it!
-    </p>
-    </div>
 
-        <div class="row" style="padding: 30px 80px 60px">
+    <div style="margin: 50px 10px;">
+        <div style="text-align: center; ">
+          <div style="padding: 30px">
+              <H2 style="font-size: 52px">Perfect story companion</H2>
+              <p style="font-size: 21px;">
+                  Ever talk in your story but no one ever has their sound on?<br>
+              </p>
+          </div>
+        </div>
+
+        <div class="row" style="padding: 20px 60px">
             <div class="column-2" style="text-align: center;">
               <!-- <iframe width= "75%" height="100%" src="https://www.youtube.com/embed/-U1JqVbFfVM?rel=0&controls=0&loop=1&showinfo=0&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-              <IMG SRC="assets/demo-2.gif" style="width:80%">
+              <IMG SRC="assets/demo-2.gif" style="padding: 20px; width:80%">
             </div>
             <div class="column-2" style="text-align: center;">
-              <IMG SRC="assets/demo-1.gif" style="width:80%">
+              <IMG SRC="assets/demo-1.gif" style="padding: 20px; width:80%">
             </div>
-          </div>
-    
+        </div>
+      </div>
+
 
   </div>
 
   <!-- Expressive fonts, vibrant colors -->
-  <div style="background-image:url('assets/photo-bg.jpg');height: 80vh; min-height: 720px;max-height: 860px; background-position: center;">
-      <div style="text-align: center; padding-top: 100px">
-          <div style="padding-bottom: 0px">
-              <H2 style="font-size: 40px">Expressive fonts, vibrant colors</H2>
+  <div class="font-demo" style="background-image: linear-gradient(134deg, #F1CCF8 0%, #FFF3DC 53%, #CCF2F5 100%);">
+      <div style="text-align: center; padding-top: 60px">
+          <div style="padding: 30px">
+              <H2 style="font-size: 50px">Expressive fonts, vibrant colors</H2>
+              <p style="font-size: 20px;">Four amazing presets to choose from,dozens of style combinations to explore.</p>
           </div>
-        
-        <p style="font-size: 18px;">
-          Four amazing presets to choose from,dozens of style combinations to explore.
-        </p>
 
         <div style="text-align: center;">
-          <IMG SRC="assets/font-demo.png" style="height:65vh; min-height: 560px;max-height: 700px; text-align: center;">
+          <IMG id="font-demo" SRC="assets/font-demo.png" style="height:62vh; min-height: 560px;max-height: 680px; text-align: center;">
+           <IMG id="font-demo-m" SRC="assets/font-demo-m.png" style="height:54vh; min-height: 560px;max-height: 640px; text-align: center;">
+
         </div>
       </div>  
   </div>
 
   <!-- Keep in touch -->
   <div>
-    <div style="text-align: center; padding: 80px; padding-top: 120px;">
+    <div style="text-align: center; padding: 150px 40px 120px;">
         <div style="padding-bottom: 0px">
-            <H2 style="font-size: 40px; color: rgb(0, 0, 0); letter-spacing: 0;">Keep in touch</H2>
+            <H2 style="font-size: 52px; color: rgb(0, 0, 0); letter-spacing: 0;">Keep in touch</H2>
         </div>
       
-      <p style="font-size: 18px; padding-bottom: 20px">
+      <p style="font-size: 20px; padding-bottom: 20px">
         Sign up with your email and be the first one to know when <br>
         Say it! launches
       </p>
@@ -135,8 +140,8 @@
           <input type = "email" name = "email" required="required" placeholder="Email Address"style="border-radius: 5px; border:1px solid rgb(210, 210, 210);
            font-weight:400; padding: 12px 16px; width: 290px">
 
-          <input type = "submit" value="Submit" style="border-radius: 5px; background-color: black; color: white; border:none; 
-          font-weight:600; padding: 13px 25px; ">
+          <input type = "submit" value="Submit" style="border-radius: 5px; background-color: rgb(35, 107, 202); color: white; border:none; 
+          font-weight:500; padding: 13px 25px; margin: 10px;">
         </form>
       </div>
     </div>  
@@ -146,14 +151,15 @@
   <footer>
     <div class="container">
       <div class="row" style="padding: 20px">
-        <div class="column-2" style="width: 70%; padding: 20px; padding-right: 60px; padding-bottom: 0px">
-          <H3 style="font-size: 18px">Design and developed by S. J. Zhang at ITP @NYU</H3>
-          <p style="font-size: 18px">Development support from Nien Lam and Sebastien Buys of LineBreak Studio. Project is open-sourced on GitHub.</p>
+        <div class="column-70" style=" padding: 20px; padding-right:40px; padding-bottom: 0px">
+          <H3 style="font-size: 22px">Design and developed by S. J. Zhang at ITP @NYU</H3>
+          <p style="font-size: 19px; letter-spacing: 0.01em">Development support from Nien Lam and Sebastien Buys of 
+            LineBreak Studio. Project is open-sourced on <a href="https://github.com/s-j-zhan9/say-it-3d">GitHub</a></p>
         </div>
-        <div class="column-2" style="width: 30%; padding: 20px">
-          <H3 style="font-size: 18px">Support me</H3>
-          <IMG SRC="assets/sponsor.png" style="width: 180px; padding-top: 20px">
 
+        <div class="column-30" style=" padding: 20px;">
+          <H3 style="font-size: 22px">Support me</H3>
+          <IMG SRC="assets/sponsor.png" style="width: 180px; padding-top: 20px">
         </div>
       </div>
     </div>

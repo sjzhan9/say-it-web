@@ -7,7 +7,8 @@
  body {
   font-size: 20px;
   color: #212529;
-  font-family: 'Roboto', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family:  'Helvetica Neue', Helvetica, Arial, sans-serif;
+  letter-spacing: -0.0em;
 }
 
 .column-2 {
@@ -16,18 +17,59 @@
   /* padding: 30px; */
 }
 
-.column-2-center{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.column-70 {
+  float: left;
+  width: 70%;
+}
+.column-30 {
+  float: left;
+  width: 30%;
+}
+
+@media screen and (max-width: 768px) {
+  .column-2 {
+    width: 100%;
+  }
+  .column-70 {
+    width: 100%;
+    padding-right:20px;
+  }
+  .column-30 {
+    width: 100%;
+  }
+  #header-image {
+    display:none;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  #font-demo {
+    display:none;
+  }
+}
+@media screen and (min-width: 1080px) {
+  #font-demo-m {
+    display:none;
+  }
+}
+
+.font-demo{
+  height: 80vh; 
+  min-height: 720px;
+  max-height: 860px; 
+  background-position: center;
 }
 
 p {
   font-weight: 400;
+  letter-spacing: -0.01em;
+
   line-height: 1.5;
-  margin: 30px 0;
-  font-size: 18;
-  color: rgba(0, 0, 0, 0.5);
+  margin: 20px 0;
+  font-size: 22;
+  color: rgba(0, 0, 0, 0.4);
+  font-family:  'Helvetica Neue', Helvetica, Arial, sans-serif;
+
 }
 
 p a {
@@ -35,9 +77,10 @@ p a {
 }
 
 input {
-  font-family: 'Roboto', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 16px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 17px;
   margin: 4px;
+  color: rgb(214, 214, 214)
 }
 
 .button {
@@ -51,7 +94,7 @@ input {
   font-size: 16px;
 }
 
-p,
+/* p,
 h1,
 h2,
 h3,
@@ -60,7 +103,7 @@ h5,
 h6 {
   
   font-family: 'Roboto', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
+} */
 
 h1 {
   font-family: 'Georgia';
@@ -72,14 +115,12 @@ h1 {
 
 
 h2 {
-  font-weight: 600;
-  font-size: 40;
+  font-weight: 500;
 }
 h3{
-  font-weight: 600;
-  font-size: 23;
+  font-weight: 500;
+  font-size: 26;
 }
-
 
 a {
   color: #212529;
@@ -151,7 +192,7 @@ img::-moz-selection {
 
 #mainNav .navbar-nav > li.nav-item > a {
   font-size: 13px;
-  font-weight: 700;
+  font-weight: 800;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
@@ -420,10 +461,13 @@ form .form-group:first-child .floating-label-form-group {
 }
 
 footer {
-  padding: 70px 0 70px;
+  padding: 90px 0 90px;
   background-color: #f5f5f5
 }
 
+footer .H3 {
+  font-size: 22pt;
+}
 
 .btn {
   font-size: 14px;
@@ -432,7 +476,7 @@ footer {
   letter-spacing: 1px;
   text-transform: uppercase;
   border-radius: 0;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .btn-primary {
