@@ -32,6 +32,8 @@ app.get('/', function(req,res){
     res.render('index', {name: req.query.name})
 })
 
+client.connect()
+
 app.get('/', function(req,res){
     res.send("hello")
 })
@@ -46,6 +48,6 @@ app.post('/post', function(req, res) {
   res.redirect('/')
 })
 
-app.listen(8000, function(){
+app.listen(process.env.PORT || 8000, function(){
   console.log("connected")
 })
