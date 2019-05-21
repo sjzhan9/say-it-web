@@ -19,6 +19,13 @@
   /* padding: 30px; */
 }
 
+.column-demo {
+  float: left;
+  width: 50%;
+  padding: 90px;
+
+}
+
 .column-70 {
   float: left;
   width: 70%;
@@ -39,10 +46,35 @@
   .column-30 {
     width: 100%;
   }
+  .column-demo {
+    width: 100%;
+    padding: 20px;
+  }
   #header-image {
     display:none;
   }
+  .font-demo{
+    height: 100vh; 
+    min-height: 780px;
+    max-height: 1200px; 
+  }
 }
+@media screen and (min-width: 768px) {
+  .font-demo{
+    height: 74vh; 
+    min-height: 720px;
+    max-height: 860px; 
+    background-position: center;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .column-demo {
+    width: 50%;
+    padding: 40px;
+  }
+}
+
 
 @media screen and (max-width: 1080px) {
   #font-demo {
@@ -55,12 +87,6 @@
   }
 }
 
-.font-demo{
-  height: 74vh; 
-  min-height: 720px;
-  max-height: 860px; 
-  background-position: center;
-}
 
 p {
   font-weight: 300;
@@ -93,7 +119,6 @@ input {
 }
 
 h1 {
-  font-family: 'Georgia';
   font-kerning: 1.5em;
   font-weight: 600;
   font-size: 60;
